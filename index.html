@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <style>
+        
+           
+    </style>
+    <title>jeux</title>
+</head>
+<body>
+    <header >
+        <div class="tete">
+            <div id="meilleurSrc"></div>
+            <div id="facScr"></div>
+            <div id="moyScr"></div>
+            <div id="diffScr"></div>
+            <div id="scoreActl"></div>
+        </div>      
+    </header>
+
+        <!-- CANVAS -->
+    <div >
+        <canvas id="canvas"  width="1300" height="700"></canvas>
+    </div>
+
+        <!-- BOUTTON PLAY -->
+    <div class="div_Jouer">
+        <button id="butJ">
+            <img src="play.png" alt="" width="50" height="50">
+        </button> 
+    </div>
+
+        <!-- BOUTTON MENU -->
+    <div class="ecartBut">
+        <button id="butPlay" class="positionBut">JOUER</button>
+        <button id="butMllS" class="positionBut">SCORES</button>
+        <button id="butThemes" class="positionBut">THÈMES</button>
+    </div>
+
+        <!-- THEME -->
+    <div class="ecartBut">
+        <button id="morning" class="positionBut">MATIN</button>
+        <button id="sunset" class="positionBut">AVANT-SOIR</button>
+        <button id="night" class="positionBut">NUIT</button>
+    </div>
+
+        <!-- NIVEAU -->
+    <div class="ecartBut">
+        <button id="facile" class="positionBut">FACILE</button>
+        <button id="moyen" class="positionBut">MOYEN</button>
+        <button id="difficile" class="positionBut">DIFFICILE</button>
+    </div>  
+
+        <!-- RETOUR THEMES -->
+    <button id="retourTheme" class="retour">
+        <img src="retour.png" alt=""  width="75" height="75">
+    </button>
+
+        <!-- RETOUR MENU -->
+    <button id="retourMenu" class="retour">
+        <img src="retour.png" alt=""  width="75" height="75">
+    </button>
+
+        <!-- RETOUR SCORE -->
+    <button id="retourScore" class="retour">
+        <img src="retour.png" alt=""  width="75" height="75">
+    </button>
+
+        <!-- RETOUR NIVEAU -->
+    <button id="retourNiveau" class="retour">
+        <img src="retour.png" alt=""  width="75" height="75">
+    </button>
+
+        <!-- AUDIO -->
+        <audio src="saut.mp3" id="saut"></audio>
+        <audio id="son"  autoplay loop>
+            <source src="floppSon.mp3">
+      </audio>
+       <!-- <audio  id="son"  autostart=true controls  >
+            <source src="floppSon.mp3" type="audio/mpeg"> 
+        </audio>-->
+
+        <!-- SON ON -->
+    <button id="on">
+        <img src="on.png" alt=""  width="75" height="75">
+    </button>
+
+        <!-- SON OFF -->
+    <button id="off">
+        <img src="off.png" alt=""  width="75" height="75">
+    </button>
+
+        <!-- SON ON MENU -->
+    <button id="onMenu">
+        <img src="on.png" alt=""  width="75" height="75">
+    </button>
+
+        <!-- SON OFF MENU -->
+    <button id="offMenu">
+        <img src="off.png" alt=""  width="75" height="75">
+    </button>
+
+    <div class="poppup">
+        <div class="header">
+            <button id="cancel">
+                <img src="cancel.png" alt="" width="35" height="35">
+            </button>
+        </div>
+        <ul>
+            <li id="sFa"></li>
+            <li id="sMoy"></li>
+            <li id="sDiff"></li>
+        </ul>
+    </div>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

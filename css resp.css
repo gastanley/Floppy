@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Press Start 2P' , cursive;
+    user-select: none;
+    background-color:rgb(92, 148, 233);
+}
+header {
+    margin: 0 auto;
+    width: 431;
+}
+.tete {
+    display: flex;
+    justify-content: space-around;
+    padding: 7px 5px;
+    font: bold 20px courier;
+}
+
+@media all and (max-width : 1200px){
+
+    header.tete {
+        width : 100%;
+        text-align: center;
+
+    }}
+
+@media all and (max-height : 400px){
+
+    header.tete {
+        height : 100%;
+        
+    }}
+
+@media all and (max-width : 1200px){
+
+    canvas {
+        width : 100%;
+    }}
+
